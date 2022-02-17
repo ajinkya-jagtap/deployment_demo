@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SecondPage from "../SecondPage";
 
 const FirstPage = () => {
   const [show, setShow] = useState(false);
@@ -16,6 +17,7 @@ const FirstPage = () => {
       >
         Go to second screen
       </button>
+      {show ? <SecondPage /> : ""}
     </>
   );
 };
